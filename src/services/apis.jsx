@@ -15,7 +15,7 @@ export const getAllProducts = () => {
 }
 
 //Manipulate product with batch 
-export const updateProduct = (data) => {
+export const batchManipulateProduct = (data) => {
    const url = `${apiProducts}/batch`
    return instance.post(url, data).then((response) => {
       console.log(response)
